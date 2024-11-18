@@ -1,0 +1,65 @@
+{% extends 'master.html' %} {% load static %} {% block content %}
+<script>
+  function searchtut(x) {
+    $.ajax({
+      method: "post",
+      url: "/loadavstu/",
+      data: { csrfmiddlewaretoken: "{{csrf_token}}", cid: x },
+      success: function (result) {
+        $("#divtut").html(result);
+      },
+    });
+  }
+  $(document).ready(function () {
+    $("#selcourse").on("change", function (x) {
+      var cid = $("#selcourse").val();
+      $.ajax({
+        method: "post",
+        url: "/user/loadavtut/",
+        data: { csrfmiddlewaretoken: "{{csrf_token}}", cid: x },
+        success: function (result) {
+          $("#divtut").html(result);
+        },
+      });
+    });
+
+    $("#btnsearch").on("click", function () {
+      sid = $("#selsub").val();
+      $.ajax({
+        method: "post",
+        url: "/loadtut/",
+        data: { csrfmiddlewaretoken: "{{csrf_token}}", sid: sid },
+        success: function (result) {
+          alert(result);
+          loadtsubject();
+        },
+      });
+    });
+  });
+</script>
+<h1>Search Tutor</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="form-group">
+        <label>Class Name</label>
+        <ul>
+          {% for r in dt %}
+          <li>
+            <a onclick="searchtut({{r.id}})" style="cursor: pointer"
+              >{{r.course}}</a
+            >
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <label>List of available students</label>
+      <div id="divtut">many other student</div>
+    </div>
+  </div>
+  <br />
+</div>
+
+{% endblock %}

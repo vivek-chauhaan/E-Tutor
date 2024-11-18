@@ -1,0 +1,718 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Etutor</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+   <link href="{% static 'css/etutor.css' %}" rel="stylesheet"/>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   {% comment %} <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'> {% endcomment %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+<div class="container-fluid ram1" style="background-image: linear-gradient(to right, rgb(226, 170, 170), rgb(233, 156, 111));" > 
+
+  <div class="row">
+    <div class="col-md-6 "style="color:black;">Hire the Best Professional Tutors today!</div>
+    <div class="col-md-6" style="color:black;">  
+     <img class="ram2" src="{% static "images/whatapp.png"%}"/> OR CALL
+     +91-80835-28083
+    </div>
+   
+  </div>
+</div>
+    <nav class="navbar navbar-expand-sm  A ">
+        <div class="container-fluid">
+          <img class="logo" src="{% static 'images/R.png'%}"/>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar " id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link navA" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navA" href="/about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navA" href="/service">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navA" href="/contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navA" data-bs-toggle="modal" data-bs-target="#myModal"> Login </a>
+              </li>
+            </ul>
+            <form class="d-flex searchbox">
+              <input class="form-control me-2 " type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+     
+
+    {% block content %}
+
+    {% endblock %}
+
+<!-- footer email image section -->
+    
+<div class="container-fluid yes mt-4">
+  <img src="{% static 'images/abc.jpg'%}" alt="Los Angeles" class="w-100 yes1"/>
+  <div class="top-left">  <img src="{% static 'images/eg.png'%}" alt="Los Angeles" class="yes2"/>
+ 
+  </div>
+  <br/>
+  <div class="bottom-right"><h3>LET'S KEEP IN TOUCH</h3>
+
+    <label  for="email"><i class="fa fa-envelope" style='font-size:24px'></i></label> &nbsp; 
+    <input class="yes4" type="text"  name="email" placeholder="E-tutor@example.com">
+
+
+    </div>
+</div>
+ <!-- footer email image section -->
+      
+  
+    <div class="container-fluid">
+      <!-- Footer -->
+      <footer
+              class="text-center text-lg-start text-white"
+              style="background-color:  #222222;"
+              >
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Links -->
+          <section class="">
+            <!--Grid row-->
+            <div class="row">
+              <!-- Grid column -->
+       
+              <!-- Grid column -->
+    
+              <hr class="w-100 clearfix d-md-none" />
+    
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h4 class="text-uppercase mb-4 font-weight-bold"><b>COMPANY</b></h4>
+                <p>
+                  <a class="text-white">About Us</a>
+                </p>
+                <p>
+                  <a class="text-white">Terms & Conditions</a>
+                </p>
+                <p>
+                  <a class="text-white">Refund & Cancellation</a>
+                </p>
+                <p>
+                  <a class="text-white">Privacy Policy</a>
+                </p>
+                <p>
+                  <a class="text-white">Site Map</a>
+                </p>
+                <p>
+                  <a class="text-white">Links</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+    
+              <hr class="w-100 clearfix d-md-none" />
+    
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h4 class="text-uppercase mb-4 font-weight-bold">
+                  <b>AREA OF WORK</b>
+                </h4>
+                <p>
+                  <a class="text-white"></a>
+                </p>
+                <p>
+                  <a class="text-white"> Coaching Admissions</a>
+                </p>
+                <p>
+                  <a class="text-white">Home Tutions</a>
+                </p>
+                <p>
+                  <a class="text-white"> Teaching Jobs</a>
+                </p>
+                <p>
+                  <a class="text-white"> Top Profile</a>
+                </p>
+                <p>
+                  <a class="text-white"> Teachers Reviews</a>
+                </p>
+              </div>
+    
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+            
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h4 class="text-uppercase mb-4 font-weight-bold"><b>GET IN TOUCH</b></h4>
+                <p>Address :  Lucknow -201301</p>
+                <p> Email : supportE-tutor.in</p>
+                <p></i> + 91 234 567 88</p>
+                <p> + 91 234 567 89</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!--Grid row-->
+          </section>
+          <!-- Section: Links -->
+    
+          <hr class="my-3">
+    
+          <!-- Section: Copyright -->
+          <section class="p-3 pt-0">
+            <div class="row d-flex align-items-center">
+              <!-- Grid column -->
+              <div class="col-md-7 col-lg-8 text-center text-md-start">
+                <!-- Copyright -->
+                <div class="p-3">
+                  2023 All Rights Reserved © E-tutor Tutor Edu Private Limited
+                 
+                </div>
+                <!-- Copyright -->
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                <!-- Facebook -->
+                <a
+                   class="btn btn-outline-light btn-floating m-1"
+                   class="text-white"#3b5998
+                   role="button"
+                   ><i class="fa fa-facebook" style="font-size:25px;color:#3b5998"></i></a>
+    
+                <!-- Twitter -->
+                <a
+                   class="btn btn-outline-light btn-floating m-1"
+                   class="text-white"
+                   role="button"
+                   ><i class="fa fa-twitter" style="font-size:25px;color:#00acee "></i></i
+                  ></a>
+    
+                <!-- Google -->
+                <a
+                   class="btn btn-outline-light btn-floating m-1"
+                   class="text-white"
+                   role="button"
+                   ><i class="fa fa-google" style="font-size:25px;color:#34A853"></i></i
+                  ></a>
+    
+                <!-- Instagram -->
+                <a
+                   class="btn btn-outline-light btn-floating m-1"
+                   class="text-white"
+                   role="button"
+                   ><i class="fa fa-instagram" style="font-size:25px;color:red"></i></i
+                  ></a>
+              </div>
+              <!-- Grid column -->
+            </div>
+          </section>
+          <!-- Section: Copyright -->
+        </div>
+        <!-- Grid container -->
+      </footer>
+      <!-- Footer -->
+    </div>
+    <!-- End of .container -->
+
+
+
+
+
+
+
+
+
+
+    <div class="modal" id="myModalsignup">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Create Account As:</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+               
+            <div class="btn-group btn-group-lg">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1">As a Teacher</button>
+              <button type="button" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#myModal2">As a Student</button>
+              
+            </div>
+
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    
+
+
+   
+    <div class="modal M" id="myModal">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <center><h4 class="modal-title"><i>Login here....</i></h4></center>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="form-group">
+                <label><b>Login As:</b></label>
+                   Teacher:<input type="radio"  id="rteacher" name="gen"/>
+                   Student:<input type="radio"  id="rstudent" name="gen"/>
+              </div>
+
+                <div class="mb-3 mt-3">
+                    <label><b>Email:</b></label>
+                    <input type="text" class="form-control" id="txtlogemail" placeholder="Enter email"/>
+                  </div>
+                  <div class="mb-3">
+                    <label><b>Password:</b></label>
+                    <input type="password" class="form-control" id="txtlogpsw" placeholder="Enter password"/>
+                  </div>
+                  
+                  <center><button type="button" class="btn btn-primary" id="btnlogin">Login</button> </center>   
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1">Signup As a Teacher</button>
+              <button type="button" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#myModal2">Signup As a Student</button>
+               
+               
+           
+                    <a class="nav-link navA" href=" ">Forgot password</a>
+              
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
+{% comment %} Teacher SIGNUP MODEL {% endcomment %}
+      <div class="modal M" id="myModal1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <center><h5 class="modal-title"><i>Teacher Signup....</i></h5></center>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="form-group">
+                    <label><b>Email:</b></label>
+                    <input type="text" class="form-control" id="txtemail" placeholder="Enter email"/>
+                  </div>
+                  {% comment %} <div class="container-fluid w-100"> {% endcomment %}
+                    <div class="row">
+                        <div class="col-md-6">
+                             <div class="form-group">
+                              <label><b>Password:</b></label>
+                              <input type="password" class="form-control" id="txtpsw" placeholder="Enter password"/>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="form-group">
+                           <label><b>Confirm Password:</b></label>
+                           <input type="password" class="form-control" id="txtcpsw" placeholder="Enter password"/>
+                         </div>
+                     </div>
+                    </div>
+
+
+                    <div class="row">
+                      <div class="col-md-6">
+                           <div class="form-group">
+                            <label><b>Name:</b></label>
+                            <input type="text" class="form-control" id="txtname" placeholder="Enter name"/>
+                          </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-group">
+                         <label><b>Mobile:</b></label>
+                         <input type="number" class="form-control" id="txtmobile" placeholder="Enter Number"/>
+                       </div>
+                   </div>
+                   
+                  {% comment %} </div> {% endcomment %}
+
+                  <div class="form-group">
+                    <label><b>Gender:</b></label>
+                       Male:<input type="radio"  id="rmale" name="gen"/>
+                       Female:<input type="radio"  id="rfemale" name="gen"/>
+                  </div>
+
+                  <div class="col-md-6">
+                        <div class="form-group">
+                         <label><b>Qualification:</b></label>
+                         <input type="text" class="form-control" id="txtqual" placeholder="Enter Number"/>
+                       </div>
+                   </div>
+                  <div class="form-group">
+                    <label><b>Address:</b></label>
+                    <textarea id="txtaddress" class="form-control"></textarea>
+                  </div><br/>
+
+               
+
+                  <div class="form-group"><br/>
+
+                  <center><button id="btnsave" class="btn btn-primary"> Create Account</button></center>
+                  </div>
+
+                </div>
+                 
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+           
+              <a class="nav-link navA w-100" data-bs-toggle="modal" data-bs-target="#myModal1">Create New Account</a>
+         
+     
+              <a class="nav-link navA" href=" ">Forgot password</a>
+        
+      </div>
+
+
+           
+      
+          </div>
+        </div>
+      </div>
+
+
+      {% comment %} student signup form.......... {% endcomment %}
+
+
+      {% comment %} student SIGNUP MODEL {% endcomment %}
+      <div class="modal M" id="myModal2">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <center><h3 class="modal-title"><i>Student Signup....</i></h3></center>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="form-group">
+                    <label><b>Email:</b></label>
+                    <input type="text" class="form-control" id="txtemail1" placeholder="Enter email"/>
+                  </div>
+                  {% comment %} <div class="container-fluid w-100"> {% endcomment %}
+                    <div class="row">
+                        <div class="col-md-6">
+                             <div class="form-group">
+                              <label><b>Password:</b></label>
+                              <input type="password" class="form-control" id="txtpsw1" placeholder="Enter password"/>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="form-group">
+                           <label><b>Confirm Password:</b></label>
+                           <input type="password" class="form-control" id="txtcpsw1" placeholder="Enter password"/>
+                         </div>
+                     </div>
+                    </div>
+
+
+                    <div class="row">
+                      <div class="col-md-6">
+                           <div class="form-group">
+                            <label><b>Name:</b></label>
+                            <input type="text" class="form-control" id="txtname1" placeholder="Enter name"/>
+                          </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-group">
+                         <label><b>Mobile:</b></label>
+                         <input type="number" class="form-control" id="txtmobile1" placeholder="Enter Number"/>
+                       </div>
+                   </div>
+                  {% comment %} </div> {% endcomment %}
+
+                  <div class="form-group">
+                    <label><b>Gender:</b></label>
+                       Male:<input type="radio"  id="rmale1" name="gen"/>
+                       Female:<input type="radio"  id="rfemale1" name="gen"/>
+                  </div>
+                  <div class="col-md-6">
+                        <div class="form-group">
+                         <label><b>Class Name:</b></label>
+                         <input type="text" class="form-control" id="txtclass1" placeholder="Enter Your Class Name"/>
+                       </div>
+
+                  <div class="form-group">
+                    <label><b>Address:</b></label>
+                    <textarea id="txtaddress1" class="form-control"></textarea>
+                  </div><br/>
+
+               
+
+                  <div class="form-group"><br/>
+
+                  <center><button id="btnsave1" class="btn btn-primary"> Create Account</button></center>
+                  </div>
+
+                </div>
+                 
+            </div>
+      
+            <!-- Modal footer -->
+            
+
+
+           
+      
+          </div>
+        </div>
+      </div>
+
+
+
+
+<script>
+
+  $(document).ready(function(){
+
+    // Teacher login form
+
+    $("#btnlogin").click(function(){
+      var email=$("#txtlogemail").val();
+      var psw=$("#txtlogpsw").val();
+      var logtype=$("#rteacher").prop('checked')?"teacher":"student";
+      if(logtype==="teacher")
+      {
+          $.ajax({
+            method:"post",
+            url:"user/log",
+            data:{'csrfmiddlewaretoken':'{{csrf_token}}','email':email,'password':psw},
+            success:function(result){
+              if(result==="Valid User"){
+                window.location="user/tdashboard";
+              }
+              else{
+                
+                    alert("Invalid user")
+              }
+            }
+          })
+    }
+    else
+    {
+      $.ajax({
+        method:"post",
+        url:"student/log1",
+        data:{'csrfmiddlewaretoken':'{{csrf_token}}','email':email,'password':psw},
+        success:function(result){
+          if(result==="Valid User"){
+            window.location="student/sdashboard";
+          }
+          else{
+            
+                alert("Invalid user")
+          }
+        }
+      })
+        
+    }
+      
+    })
+   // Teacher signup form
+
+    $("#btnsave").click(function(){
+      var email=$("#txtemail").val();
+      var psw=$("#txtpsw").val();
+      var cpsw=$("#txtcpsw").val();
+      var name=$("#txtname").val();
+      var mobile=$("#txtmobile").val();
+      var gen=$("#rmale").prop('checked')?"male":"female";
+      var address=$("#txtaddress").val();
+      var qualification=$("#txtqual").val();
+      
+
+      if(email===""){
+        alert("Please enter email");
+        $("#txtemail").focus();
+      }
+
+      else if(psw===""){
+        alert("Please enter password");
+        $("#txtpsw").focus();
+      }
+      else if(cpsw===""){
+        alert("Please enter confirm password");
+        $("#txtemail").focus();
+      }
+
+      else if(name===""){
+        alert("Please enter name");
+        $("#txtname").focus();
+      }
+
+      else if(mobile===""){
+        alert("Please enter mobile");
+        $("#txtmobile").focus();
+      }
+
+      else if(!$("#rmale").prop('checked')&& !$("#rfemale").prop('checked')){
+        alert("Please select gender");
+        $("#rmale").focus();
+      }
+
+      else if(address===""){
+        alert("Please enter address");
+        $("#txtaddress").focus();
+      }
+      
+
+      else{
+        // send data to viewport
+        $.ajax({
+          method:"post",
+          url: "user/save",
+          data:{'csrfmiddlewaretoken':'{{csrf_token}}','email':email,'password':psw,'name':name,'mobile':mobile,'gender':gen,'address':address,'qualification':qualification},
+          success:function(result){
+            alert(result);
+          }
+        })
+      }
+    })
+  })
+
+
+
+// Student  signup form
+
+$("#btnsave1").click(function(){
+  var semail=$("#txtemail1").val();
+  var spsw=$("#txtpsw1").val();
+  var scpsw=$("#txtcpsw1").val();
+  var sname=$("#txtname1").val();
+  var smobile=$("#txtmobile1").val();
+  var sgen=$("#rmale1").prop('checked')?"male":"female";
+  var saddress=$("#txtaddress1").val();
+  var class1=$("#txtclass1").val();
+      
+
+  if(semail===""){
+    alert("Please enter email");
+    $("#txtemail1").focus();
+  }
+
+  else if(spsw===""){
+    alert("Please enter password");
+    $("#txtpsw1").focus();
+  }
+  else if(scpsw===""){
+    alert("Please enter confirm password");
+    $("#txtcpsw1").focus();
+  }
+
+  else if(sname===""){
+    alert("Please enter name");
+    $("#txtname1").focus();
+  }
+
+  else if(smobile===""){
+    alert("Please enter mobile");
+    $("#txtmobile1").focus();
+  }
+
+  else if(!$("#rmale1").prop('checked')&& !$("#rfemale1").prop('checked')){
+    alert("Please select gender");
+    $("#rmale1").focus();
+  }
+
+  else if(saddress===""){
+    alert("Please enter address");
+    $("#txtaddress1").focus();
+  }
+  
+
+  else{
+    // send data to viewport
+    $.ajax({
+      method:"post",
+      url: "student/save1",
+      data:{'csrfmiddlewaretoken':'{{csrf_token}}','email':semail,'password':spsw,'name':sname,'mobile':smobile,'gender':sgen,'address':saddress,'class1':class1},
+      success:function(result){
+        alert(result);
+      }
+    })
+  }
+})
+
+
+
+
+
+</script>   
+  <br/>
+
+<div class="container-fluid footerSection">
+  <div class="row footerMrow">
+    <div class="col-md-3">
+      <h2 class="headingfooter footerA"><i><b>About Us....</b></i></h2><br/>
+       <p class="footerpara">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Etutor is a online teaching project. That are provoiding the opportunity both are Student and teachers.The student can find the best teacher and teacher getting job easily by using this website... </p>
+       
+
+
+    </div>
+   
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+
+</body>
+
+</html>
+

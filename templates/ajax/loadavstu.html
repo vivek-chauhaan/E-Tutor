@@ -1,0 +1,17 @@
+{% load static %}
+<div class="row">
+    {% for r in dt %}
+    <div class="col-md-4">
+   
+    <div class="card">
+        <img class="card-img-top" style="height:100px;" src="{% static 'images/html.png'%}" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">{{r.StName}}({{r.StGender}})</h4>
+          <p class="card-text">M. {{r.StMobile}}</p>
+          <p>Address:</p>
+          <p class="card-text">{{r.StAddress}}</p>
+        </div>
+      </div>    
+    </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,18 @@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>SNo</th>
+            <th>Class Name</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for r in dt %}
+    <tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{r.course}}</td>
+        <td><button class="btn btn-danger">Delete</button></td>
+    </tr>    
+    {% endfor %}
+</tbody>
+</table>

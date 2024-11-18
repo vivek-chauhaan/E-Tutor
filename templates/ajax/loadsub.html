@@ -1,0 +1,6 @@
+<select id="selsub" class="form-control">
+    <option value="subject">-Select Subject-</option>
+    {% for r in dt %}
+        <option value="{{r.id}}">{{r.subject}}</option>
+    {% endfor %}
+</select>
